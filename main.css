@@ -1,0 +1,28 @@
+.hero-banner {
+    padding: 116px 0;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url(FruttetoAgnosine.jpg) center no-repeat;
+    background-size: cover;
+    color: goldenrod;
+}
+
+@media (min-width: 768px) {
+    .hero-banner {
+        padding: 176px 0 120px;
+
+    }
+}
+
+.card-img-top {
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    padding: 0px;
+    margin:auto;
+}
+
+.form-control {
+    padding: 10px;
+    margin: 10px 0;
+}
