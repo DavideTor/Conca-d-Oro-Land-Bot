@@ -12,16 +12,16 @@
 
 <body>
     <script>
-    window.addEventListener('mouseover', initLandbot, {once: true });
-    window.addEventListener('touchstart', initLandbot, {once: true });
-    var myLandbot;
-    function initLandbot() {
+window.addEventListener('mouseover', initLandbot, { once: true });
+window.addEventListener('touchstart', initLandbot, { once: true });
+var myLandbot;
+function initLandbot() {
   if (!myLandbot) {
     var s = document.createElement('script');
     s.type = "module"
     s.async = true;
     s.addEventListener('load', function() {
-      var myLandbot = new Landbot.Livechat({
+      myLandbot = new Landbot.Popup({
         configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2849423-KXL7U51T9ASDQ7CJ/index.json',
       });
     });
